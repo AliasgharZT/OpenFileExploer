@@ -1,0 +1,18 @@
+
+<Style>:
+    MDScreenManager:
+        id:mn 
+# [[[main]]]
+        MDScreen:
+            name:'main'
+            MDScreen:
+                MDAnchorLayout:
+                    anchor_x:'center'
+                    anchor_y:'center'
+                    MDRectangleFlatButton:
+                        text:'OpenFileExploer'
+                        size_hint: 0.3, 0.2
+                        on_press:root.fmn.open_file(on_selection=root.handle_selection)
+# [[[fake]]]
+        MDScreen:
+            name:'fake'
